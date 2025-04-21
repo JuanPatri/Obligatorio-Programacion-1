@@ -1,4 +1,4 @@
-# 🧳 Obligatorio Programación 1 - Sistema de Gestión de Viajes
+# 🧳 Obligatorio Programación 1 - Sistema de Gestión de Reclamos
 
 Este proyecto es el trabajo obligatorio de la materia **Programación 1** de la **Licenciatura en Sistemas** de la Universidad ORT Uruguay. Implementamos junto a Theo Brum una web con HTML, CSS y Javascript que gestiona reclamos.
 
