@@ -1,0 +1,225 @@
+/* Autores: Theo Brum 315141 y Juan Pablo Patri 266824 */
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .enlace {
+    color: #2a8004
+  }
+  
+  .logo {
+    color: #b0c858;
+    height: 50px;
+  }
+  
+  .todo {
+    background-color: #b0c858;
+    font-family: Arial;
+    padding-bottom: 100%;
+  }
+  
+  .lupa {
+    height: 15px;
+    background-color: #b0c858;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 30px;
+  }
+  
+  .reclamoaqui {
+    margin-left: 2px;
+    background-color: #ff9e7b;
+  }
+  
+  .hastaagregar {
+    margin-top: -20px;
+    margin-left: 2px;
+    background-color: #c39c51;
+  }
+  
+  .contador1 {
+    margin-left: 5px;
+    margin-top: 15px;
+    background-color: #c07651;
+  }
+  
+  .estadisticas {
+    margin-right: 10px;
+    margin-left: 4px;
+    margin-top: 15px;
+    background-color: #c39c51;
+  }
+  
+  .agregarempresa {
+    margin-right: 10px;
+    margin-left: 4px;
+    background-color: #99f996;
+  }
+  
+  .lineaboton {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .boton {
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 12px 18px;
+    background-image: linear-gradient(to bottom, #b1bd58, #be8552);
+    font-family: Arial;
+    top: 50%;
+    left: 50%;
+    margin-top: 10px;
+    margin-bottom: 13px;
+  }
+  
+  .reclamo2 {
+    padding-left: 300px;
+    width: 1040px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 77px;
+  }
+  
+  .nombre {
+    width: 200px;
+    height: 10px;
+  }
+  
+  .empresa {
+    width: 200px;
+    height: 10px;
+  }
+  
+  .reclamo {
+    width: 200px;
+    height: 10px;
+  }
+  
+  .tabla {
+    background-color: white;
+    width: 90%;
+    border-radius: 12px;
+    text-align: center;
+    border-spacing: 2px;
+    border-collapse: separate;
+    border: 2px solid black;
+    padding: 1px;
+  }
+  
+  .tabla th,
+  .tabla td {
+    border: 3px solid black;
+  }
+  
+  #idCajaNombre {
+    margin-left: 45px;
+    width: 200px;
+  }
+  
+  #idCajaDireccion {
+    margin-left: 36px;
+    width: 200px;
+  }
+  
+  #idCajaRubro {
+    margin-left: 58px;
+    width: 208px;
+  }
+  
+  #idBotonAgregar {
+    margin-left: 106px;
+  }
+  
+  #idNombre {
+    margin-left: 40px;
+    width: 200px;
+  }
+  
+  #idEmpresa {
+    margin-left: 33px;
+    width: 208px
+  }
+  
+  #idCajaReclamo {
+    margin-left: 30px;
+    width: 200px;
+  }
+  
+  #idCajaExtensa {
+    margin-left: 102px;
+    width: 350px;
+    height: 60px;
+  }
+  
+  #idBotonAg {
+    margin-left: 102px;
+  }
+  
+  .botonesAT {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .crecienteydec {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .divtabla {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .botonSeleccionado {
+    background-color: #32cc33;
+  }
+  
+  .fotojp {
+    height: 30px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1.5px solid #f6c298
+  }
+  
+  .fototheo {
+    height: 30px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1.5px solid #f6c298
+  }
+  
+  .jp {
+    display: flex;
+    align-items: center;
+  }
+  
+  .theo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subrayarV {
+    background-color: #2cce2b;
+  }
+  
+  .subrayarS {
+    background-color: #fc9f6c;
+  }
+  
+  .margencontador {
+    margin-left: 5px;
+  }
+  
+  #idNoCoincidencias {
+    margin-left: 5px;
+    margin-top: 15px;
+    background-color: #c07651;
+  }  

@@ -1,0 +1,157 @@
+<!-- Autores: Theo Brum 315141 y Juan Pablo Patri 266824 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Obligatorio 1</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Sitio desaarrollado para Programacion I en la universidad ORT Uruguay.">
+  <meta name="keywords" content="obligatorio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <script src="./js/clases.js"></script>
+  <script src="./js/funciones.js"></script>
+</head>
+
+<body>
+  <div class="todo">
+    <div class="logo" id="linklogo">
+      <nav>
+        <ul>
+          <li><img src="https://sireclamo.com/wp-content/uploads/2020/09/PNGS-WEB-50-e1601080034368.png" class="logo"
+              alt="logo"></li>
+          <li><a class="enlace" href="#linklogo" id="idLinkPrincipal">Principal</a></li>
+          <li><a class="enlace" href="#linkhastaagregar" id="idLinkVerReclamos">Ver Reclamos</a></li>
+          <li><a class="enlace" href="#linkestadisticas" id="idLinkEstadisticas">Estad&iacute;sticas</a></li>
+          <li><a class="enlace" href="#linkagregarempresa" id="idLinkAgregarEmpresa">Agregar Empresa</a></li>
+          <li>
+            <input type="text" id="idTextoLupa" maxlength="30">
+            <button type="button" id="idBotonLupa">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/009/876/398/original/realistic-magnifying-glass-clip-art-free-png.png"
+                class="lupa" alt="lupa">
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="reclamoaqui" id="idReclamoAqui">
+      <h2 class="titulo">Sitio para la gesti&oacute;n de reclamos</h2>
+      <div id="idTituloGestion">
+        <h3 class="subtitulo">Este sitio permite ingresar reclamos o quejas y realizar diversas consultas.</h3>
+        <p class="parrafo1">Sitio desarrollado en el curso de Programaci&oacute;n I - 1er semestre 2023 - Universidad
+          ORT Uruguay por:</p>
+        <div class="jp">
+          <a href="./img/fotojuan.jpg" target="_blank">
+            <img src="./img/fotojuan.jpg" alt="Foto Juan Pablo Patri - 266824" class="fotojp">
+          </a>
+          <p>Juan Pablo Patri Mendoza - 266824</p>
+        </div>
+        <div class="theo">
+          <a href="./img/fototheo.jpg" target="_blank">
+            <img src="./img/fototheo.jpg" alt="Foto Theo Brum - 315141" class="fototheo">
+          </a>
+          <p>Theo Brum - 315141</p>
+        </div>
+
+        <form class="lineaboton">
+          <input type="button" value="Agrega tu reclamo aqu&iacute;" class="boton" id="idAgregarReclamo">
+        </form>
+      </div>
+    </div>
+    <div class="hastaagregar" id="linkhastaagregar" style="display: none;">
+      <h2 class="reclamo">Agregar Reclamo</h2>
+      <form id="idFormReclamo">
+        <label class="nombre">Nombre</label>
+        <input type="text" placeholder="Tu nombre..." id="idNombre" maxlength="30" aria-required="true" required>
+        <br>
+        <label class="empresa">Empresa</label>
+        <select id="idEmpresa">
+        </select>
+        <br>
+        <label class="reclamo">Reclamo:</label>
+        <input type="text" placeholder="El t&iacute;tulo es..." id="idCajaReclamo" maxlength="30" aria-required="true"
+          required>
+        <br>
+        <textarea id="idCajaExtensa" placeholder="y tu reclamo es...." maxlength="30" aria-required="true"
+          required></textarea>
+        <br>
+        <input type="button" value="Agregar" id="idBotonAg">
+        <input type="button" value="Volver" id="idBotonVolver">
+      </form>
+    </div>
+    <div class="verReclamos" id="idVerReclamos" style="display: none;">
+      <div class="contador1">
+        <h2>Reclamos ingresados (los m&aacute;s recientes primero)</h2>
+        <div id="idGeneradorReclamos">
+        </div>
+      </div>
+    </div>
+    <div class="estadisticas" id="linkestadisticas" style="display: none;">
+      <h2>Estad&iacute;sticas</h2>
+      <h3>Empresas Seleccionadas</h3>
+      <div id="idBotonesEstadisticas">
+      </div>
+      <form class="crecienteydec">
+        <input type="radio" name="orden" value="creciente" checked="checked" id="idBotonCreciente">
+        <label>Orden nombre creciente</label>
+        <input type="radio" name="orden" value="decreciente" id="idBotonDecreciente">
+        <label>Orden nombre decreciente</label>
+      </form>
+      <div class="divtabla">
+        <table class="tabla" id="idTablaReclamos">
+          <caption class="caption" id="idCaption">Empresas que empiezan con </caption>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Direcci&oacute;n</th>
+              <th>Rubro</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody id="idTBody">
+          </tbody>
+        </table>
+      </div>
+      <h3>Informaci&oacute;n General</h3>
+      <p id="idPromedioReclamos"></p>
+      <p id="idTotalEmpresas"></p>
+      <h3>Empresas sin Reclamos</h3>
+      <p id="idEmpRec"></p>
+      <ul id="idEmpresasSinReclamo">
+      </ul>
+      <h3>Rubros con m&aacute;xima cantidad de reclamos</h3>
+      <ul id="idRubroMaximo">
+      </ul>
+    </div>
+    <div class="agregarempresa" id="linkagregarempresa" style="display: none;">
+      <h2>Agregar Empresa</h2>
+      <h3>Datos:</h3>
+      <form id="formEmpresa">
+        <label>Nombre</label>
+        <input type="text" id="idCajaNombre" maxlength="30" aria-required="true" required>
+        <br>
+        <label>Direcci&oacute;n</label>
+        <input type="text" id="idCajaDireccion" maxlength="30" aria-required="true" required>
+        <br>
+        <label>Rubro</label>
+        <select id="idCajaRubro">
+          <option>Viajes</option>
+          <option>Restaurantes</option>
+          <option>Bancos</option>
+          <option>Muebles</option>
+          <option>Autos</option>
+          <option>Servicios</option>
+          <option>General</option>
+        </select>
+      </form>
+      <input type="button" value="Agregar" id="idBotonAgregar">
+    </div>
+    <div id="idNoCoincidencias" style="display: none;">
+      <h2>Reclamos ingresados (los m&aacute;s recientes primero)</h2>
+      <p>Sin datos</p>
+    </div>
+  </div>
+</body>
+
+</html>
